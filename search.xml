@@ -1,10 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello,hexo</title>
-    <url>/2020/08/09/hello-hexo/</url>
-    <content><![CDATA[<p>创建博客</p>
+    <title>Hexo-theme-butterfly相关配置</title>
+    <url>/2020/08/16/Hexo-theme-butterfly%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<h1 id="Front-matter"><a href="#Front-matter" class="headerlink" title="Front-matter"></a>Front-matter</h1><p>Front-matter 是档案最上方以 <code>--- </code>分隔的区域，用于指定个别档案的变数。</p>
+<div class="note info">
+            <p>如果标注<code>可选</code>的参数，可根据自己需要添加，不用全部都写在 markdown 里</p>
+          </div>
+
+<h2 id="Post-Front-matter"><a href="#Post-Front-matter" class="headerlink" title="Post Front-matter"></a>Post Front-matter</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">keywords:</span><br><span class="line">description:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">comments：</span></span><br><span class="line"><span class="emphasis">cover:  </span></span><br><span class="line"><span class="emphasis">toc:  </span></span><br><span class="line"><span class="emphasis">toc_</span>number:</span><br><span class="line">auto<span class="emphasis">_open:</span></span><br><span class="line"><span class="emphasis">copyright:</span></span><br><span class="line"><span class="emphasis">copyright_</span>author:</span><br><span class="line">copyright<span class="emphasis">_author_</span>href:</span><br><span class="line">copyright<span class="emphasis">_url:</span></span><br><span class="line"><span class="emphasis">copyright_</span>info:</span><br><span class="line">mathjax:</span><br><span class="line">katex:</span><br><span class="line">aplayer：</span><br><span class="line">highlight<span class="emphasis">_shrink：</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="left">写法</th>
+<th align="left">解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">title</td>
+<td align="left">【必需】文章标题</td>
+</tr>
+<tr>
+<td align="left">date</td>
+<td align="left">【必需】文章创建日期</td>
+</tr>
+<tr>
+<td align="left">updated</td>
+<td align="left">【可选】文章更新日期</td>
+</tr>
+<tr>
+<td align="left">tags</td>
+<td align="left">【可选】文章标籤</td>
+</tr>
+<tr>
+<td align="left">categories</td>
+<td align="left">【可选】文章分类</td>
+</tr>
+<tr>
+<td align="left">keywords</td>
+<td align="left">【可选】文章关键字</td>
+</tr>
+<tr>
+<td align="left">description</td>
+<td align="left">【可选】文章描述</td>
+</tr>
+<tr>
+<td align="left">top_img</td>
+<td align="left">【可选】文章顶部图片</td>
+</tr>
+<tr>
+<td align="left">cover</td>
+<td align="left">【可选】文章缩略图 (如果没有设置 top_img, 文章页顶部将显示缩略图，可设为 false / 图片地址 / 留空)</td>
+</tr>
+<tr>
+<td align="left">comments</td>
+<td align="left">【可选】显示文章评论模块 (默认 true)</td>
+</tr>
+<tr>
+<td align="left">toc</td>
+<td align="left">【可选】显示文章 TOC (默认为设置中 toc 的 enable 配置)</td>
+</tr>
+<tr>
+<td align="left">toc_number</td>
+<td align="left">【可选】显示 toc_number (默认为设置中 toc 的 number 配置)</td>
+</tr>
+<tr>
+<td align="left">auto_open</td>
+<td align="left">【可选】是否自动打开 TOC (默认为设置中 toc 的 auto_open 配置)</td>
+</tr>
+<tr>
+<td align="left">copyright</td>
+<td align="left">【可选】显示文章版权模块 (默认为设置中 post_copyright 的 enable 配置)</td>
+</tr>
+<tr>
+<td align="left">copyright_author</td>
+<td align="left">【可选】文章版权模块的<code>文章作者</code></td>
+</tr>
+<tr>
+<td align="left">copyright_author_href</td>
+<td align="left">【可选】文章版权模块的<code>文章作者</code>链接</td>
+</tr>
+<tr>
+<td align="left">copyright_url</td>
+<td align="left">【可选】文章版权模块的<code>文章连结</code>链接</td>
+</tr>
+<tr>
+<td align="left">copyright_info</td>
+<td align="left">【可选】文章版权模块的<code>版权声明</code>文字</td>
+</tr>
+<tr>
+<td align="left">mathjax</td>
+<td align="left">【可选】显示 mathjax (当设置 mathjax 的 per_page: false 时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td align="left">katex</td>
+<td align="left">【可选】显示 katex (当设置 katex 的 per_page: false 时，才需要配置，默认 false)</td>
+</tr>
+<tr>
+<td align="left">aplayer</td>
+<td align="left">【可选】在需要的页面加载 aplayer 的 js 和 css, 请参考hexo-theme-butterfly文章下面的<code>音乐</code>配置</td>
+</tr>
+<tr>
+<td align="left">highlight_shrink</td>
+<td align="left">【可选】配置代码框是否展开 (true/false)(默认为设置中 highlight_shrink 的配置)</td>
+</tr>
+</tbody></table>
 ]]></content>
+      <tags>
+        <tag>Hexo Hexo-theme-butterfly</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -22,6 +127,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hello,hexo</title>
+    <url>/2020/08/09/hello-hexo/</url>
+    <content><![CDATA[<p>创建博客</p>
 ]]></content>
   </entry>
 </search>
