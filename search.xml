@@ -106,6 +106,20 @@
 <td align="left">【可选】配置代码框是否展开 (true/false)(默认为设置中 highlight_shrink 的配置)</td>
 </tr>
 </tbody></table>
+<h1 id="标籤外挂（Tag-Plugins）"><a href="#标籤外挂（Tag-Plugins）" class="headerlink" title="标籤外挂（Tag Plugins）"></a>标籤外挂（Tag Plugins）</h1><div class="note info">
+            <p>标籤外挂是 Hexo 独有的功能，并不是标準的 Markdown 格式。</p><p>以下的写法，只适用于<code>Butterfly</code>主题，用在其它主题上不会有效果，甚至可能会报错。使用前请留意</p>
+          </div>
+
+<div class="note warning">
+            <p>标籤外挂虽然能为主题带来一些额外的功能和 UI 方面的强化，但是，标籤外挂也有明显的限制，使用时请留意。</p>
+          </div>
+
+<h2 id="Note-Bootstrap-Callout"><a href="#Note-Bootstrap-Callout" class="headerlink" title="Note (Bootstrap Callout)"></a>Note (Bootstrap Callout)</h2><p>用法</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note [class] [no-icon] %&#125;</span><br><span class="line">Any content (support inline tags too.io).</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">[class]   : default | primary | success | info | warning | danger.</span><br><span class="line">[no-icon] : Disable icon in note.</span><br><span class="line"></span><br><span class="line">All parameters are optional.</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">&#123;% note default %&#125;</span><br><span class="line">default 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note primary no-icon %&#125;</span><br><span class="line">primary 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note success %&#125;</span><br><span class="line">success 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note info %&#125;</span><br><span class="line">info 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note warning %&#125;</span><br><span class="line">warning 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% note danger %&#125;</span><br><span class="line">danger 提示块标籤</span><br><span class="line">&#123;% endnote %&#125;</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>Hexo</category>
@@ -114,12 +128,6 @@
         <tag>Hexo</tag>
         <tag>Hexo-theme-butterfly</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>hello,hexo</title>
-    <url>/2020/08/09/hello-hexo/</url>
-    <content><![CDATA[<p>创建博客</p>
-]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -137,6 +145,12 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hello,hexo</title>
+    <url>/2020/08/09/hello-hexo/</url>
+    <content><![CDATA[<p>创建博客</p>
 ]]></content>
   </entry>
 </search>
